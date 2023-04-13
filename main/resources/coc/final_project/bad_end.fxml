@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="coc.final_project.bad_end">
+   <children>
+      <ImageView fx:id="BE" onMouseClicked="#OnFinishPressed" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pic/BE.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="text" fill="WHITE" layoutX="21.0" layoutY="792.0" strokeType="OUTSIDE" strokeWidth="0.0" text="你向後方走了過去，伴隨這一陣啪啦啪啦的金屬碎裂聲襲來的是一抹絕望的漆黑，伴隨者逐漸模糊的視線，你眼前的畫面逐漸扭曲，而在最後的最後你才意會到了那句「只管前進吧 已經沒有退路了」的意義。" wrappingWidth="1561.0001220703125">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

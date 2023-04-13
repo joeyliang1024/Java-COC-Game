@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="807.0" prefWidth="1522.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="coc.final_project.scene7Controller">
+   <children>
+      <Text fx:id="text" layoutX="14.0" layoutY="704.0" strokeType="OUTSIDE" strokeWidth="0.0" text="你進入了後方的車廂，映入你眼簾的是滿地狼藉的殘軀，而車廂的後方被一層黑霧壟罩。" wrappingWidth="988.0">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Text>
+      <Text fx:id="hp" fill="#f20f0f" layoutX="1183.0" layoutY="74.0" stroke="#070100" strokeType="OUTSIDE" strokeWidth="0.0" text="HP:" wrappingWidth="273.37752553813425">
+         <font>
+            <Font size="28.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Text>
+      <Text fx:id="san" fill="#0d5bdb" layoutX="1183.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SAN:" wrappingWidth="259.146240234375">
+         <font>
+            <Font size="28.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Text>
+      <Text fx:id="crazyMode" fill="#16dab9" layoutX="1183.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="瘋狂狀態" wrappingWidth="284.60009765625">
+         <font>
+            <Font size="28.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Text>
+      <ImageView fx:id="background" fitHeight="805.0" fitWidth="1163.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pic/background.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="normal" fitHeight="537.0" fitWidth="377.0" layoutX="1153.0" layoutY="242.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pic/char.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="hurt" fitHeight="537.0" fitWidth="377.0" layoutX="1153.0" layoutY="242.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@pic/char_hurt.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="crazy" fitHeight="537.0" fitWidth="377.0" layoutX="1153.0" layoutY="242.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@pic/char_crazy.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="crazyHurt" fitHeight="537.0" fitWidth="377.0" layoutX="1153.0" layoutY="242.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@pic/char_both.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="判定" layoutX="1212.0" layoutY="664.0" mnemonicParsing="false" onAction="#OnCheckPressed" prefHeight="95.0" prefWidth="192.0" text="判定" textFill="#d04343" visible="false">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Button>
+      <Button fx:id="forward" layoutX="16.0" layoutY="352.0" mnemonicParsing="false" onAction="#OnForwardPressed" prefHeight="53.0" prefWidth="206.0" text="回到前方車廂">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Button>
+      <Button fx:id="backward" layoutX="942.0" layoutY="352.0" mnemonicParsing="false" onAction="#OnBackwardPressed" prefHeight="53.0" prefWidth="206.0" text="前往後半車廂">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Button>
+      <Button fx:id="觀察後半車廂" layoutX="942.0" layoutY="285.0" mnemonicParsing="false" onAction="#OnObservePressed" prefHeight="53.0" prefWidth="206.0" text="觀察後半車廂">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Button>
+      <Button fx:id="觀察屍塊" layoutX="733.0" layoutY="580.0" mnemonicParsing="false" onAction="#OnDeadbodyPressed" prefHeight="51.0" prefWidth="182.0" text="觀察屍塊">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

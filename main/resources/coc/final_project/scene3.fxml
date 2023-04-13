@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="807.0" prefWidth="1522.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="coc.final_project.scene3Controller">
+    <children>
+        <Text fx:id="text" layoutX="124.0" layoutY="718.0" strokeType="OUTSIDE" strokeWidth="0.0" text="這個車廂充滿了雜亂無章的行李">
+            <font>
+                <Font size="28.0" />
+            </font>
+        </Text>
+        <Text fx:id="hp" fill="#f20f0f" layoutX="1183.0" layoutY="74.0" stroke="#070100" strokeType="OUTSIDE" strokeWidth="0.0" text="HP:" wrappingWidth="273.37752553813425">
+            <font>
+                <Font size="28.0" />
+            </font>
+            <effect>
+                <Lighting>
+                    <bumpInput>
+                        <Shadow />
+                    </bumpInput>
+                    <light>
+                        <Light.Distant />
+                    </light>
+                </Lighting>
+            </effect>
+        </Text>
+        <Text fx:id="san" fill="#0d5bdb" layoutX="1183.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SAN:" wrappingWidth="259.146240234375">
+            <font>
+                <Font size="28.0" />
+            </font>
+            <effect>
+                <Lighting>
+                    <bumpInput>
+                        <Shadow />
+                    </bumpInput>
+                    <light>
+                        <Light.Distant />
+                    </light>
+                </Lighting>
+            </effect>
+        </Text>
+        <Text fx:id="crazyMode" fill="#16dab9" layoutX="1183.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="瘋狂狀態" wrappingWidth="284.60009765625">
+            <font>
+                <Font size="28.0" />
+            </font>
+            <effect>
+                <Lighting>
+                    <bumpInput>
+                        <Shadow />
+                    </bumpInput>
+                    <light>
+                        <Light.Distant />
+                    </light>
+                </Lighting>
+            </effect>
+        </Text>
+        <ImageView fx:id="background" fitHeight="805.0" fitWidth="1163.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@pic/background.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="normal" fitHeight="537.0" fitWidth="377.0" layoutX="1153.0" layoutY="242.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@pic/char.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="hurt" fitHeight="537.0" fitWidth="377.0" layoutX="1153.0" layoutY="242.0" pickOnBounds="true" preserveRatio="true" visible="false">
+            <image>
+                <Image url="@pic/char_hurt.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="crazy" fitHeight="537.0" fitWidth="377.0" layoutX="1153.0" layoutY="242.0" pickOnBounds="true" preserveRatio="true" visible="false">
+            <image>
+                <Image url="@pic/char_crazy.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="crazyHurt" fitHeight="537.0" fitWidth="377.0" layoutX="1153.0" layoutY="242.0" pickOnBounds="true" preserveRatio="true" visible="false">
+            <image>
+                <Image url="@pic/char_both.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="flashLight" fitHeight="150.0" fitWidth="200.0" layoutX="402.0" layoutY="410.0" pickOnBounds="true" preserveRatio="true" visible="false">
+            <image>
+                <Image url="@pic/attendant.png" />
+            </image>
+        </ImageView>
+        <Button fx:id="persuade" layoutX="1212.0" layoutY="664.0" mnemonicParsing="false" onAction="#OnPersuadePress" prefHeight="95.0" prefWidth="192.0" text="說服判定" textFill="#d04343" visible="false">
+            <font>
+                <Font size="32.0" />
+            </font>
+        </Button>
+        <Button fx:id="forward" layoutX="16.0" layoutY="352.0" mnemonicParsing="false" onAction="#OnForwardPressed" prefHeight="51.0" prefWidth="151.0" text="前往前方">
+            <font>
+                <Font size="27.0" />
+            </font>
+        </Button>
+        <Button fx:id="backward" layoutX="997.0" layoutY="352.0" mnemonicParsing="false" onAction="#OnBackwardPressed" prefHeight="51.0" prefWidth="151.0" text="前往後方">
+            <font>
+                <Font size="27.0" />
+            </font>
+        </Button>
+      <Button fx:id="findsuitcase" layoutX="586.0" layoutY="459.0" mnemonicParsing="false" onAction="#OnfindsuitcasePress" prefHeight="50.0" prefWidth="150.0" text="翻找行李">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Button>
+      <Button fx:id="Persuademan" layoutX="299.0" layoutY="611.0" mnemonicParsing="false" onAction="#OnPersuademanPress" text="說服男子給出鑰匙" visible="false">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Button>
+      <Button fx:id="finding" layoutX="639.0" layoutY="611.0" mnemonicParsing="false" onAction="#OnfindingPress" text="花費時間仔細搜查" visible="false">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="key" fitHeight="53.0" fitWidth="94.0" layoutX="516.0" layoutY="361.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@pic/key.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="Observe" layoutX="1212.0" layoutY="663.0" mnemonicParsing="false" onAction="#OnobservePress" prefHeight="95.0" prefWidth="192.0" text="觀察判定" visible="false">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>

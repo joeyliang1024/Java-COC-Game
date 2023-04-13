@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="807.0" prefWidth="1522.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="coc.final_project.explainController">
+   <children>
+      <Text fill="#ae3aad" layoutX="636.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="說明書:" wrappingWidth="204.07298278808594">
+         <font>
+            <Font size="60.0" />
+         </font>
+      </Text>
+      <Text layoutX="130.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="此遊戲規則為COC第七版規則簡化後的結果，若對完整COC第七版規則感興趣可在Google上搜尋悠子大大寫的CoC 7e規則筆記。&#10;此遊戲建立在玩家的選擇和骰子點數上，每個場景內會出現多個選項可以選擇角色現在要做的事。此遊戲建立在玩家的選擇和骰子點數上，每個場景內會出現多個選項可以選擇角色現在要做的事。&#10;" wrappingWidth="1253.176254272461">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="126.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="判定規則:若要進行有一定困難度的行動則要進行技能判定，這裡預設角色的所有屬性和技能都是60，技能判定為骰一個百面骰&#10;                     而結果小於60時行動成功，反之則失敗，若是做此事有劣勢則有減易，反之有增易，一個判定一場遊戲只能進行一次。&#10;瘋狂規則:若san值(理智值):降低1/5(12)會陷入瘋狂狀態，瘋狂狀態將會對角色的某些行動造成影響。&#10;&#10;戰鬥規則:此劇本存在戰鬥可能，戰鬥規則為回合制戰鬥&#10;                     一般攻擊傷害為1-3+DB，DB為身體素質造成的傷害加成，角色加成為1-4。&#10;&#10;&#9;            1.攻擊方宣告攻擊，而防守方宣告閃避或反擊。&#10;&#10;&#9;           2.攻擊行動:骰一個骰子，若&lt;=5:大成功，&lt;=12極限成功、&lt;=30困難成功、&lt;=60成功、&lt;=95失敗，else大失敗&#10;&#10;&#9;           3.閃避或反擊行動: 骰一個骰子，若&lt;=5:大成功，&lt;=12極限成功、&lt;=30困難成功、&lt;=60成功、&lt;=95失敗，else大失敗&#10;&#10;&#9;           4.若宣告閃避，且閃避成功等級與攻擊成功等級相同:成功閃避了攻擊&#10;&#9;               若宣告反擊，且反擊成功等級比攻擊成功等級高一級:成功反擊&#10;&#9;               若攻擊大失敗: 造成未知不良後果&#10;&#9;               若失敗:攻擊失敗 &#10;&#9;               若成功、困難成功:造成傷害&#10;&#9;               若極限成功、大成功:造成最大攻擊力傷害&#10;&#9;               若閃避、反擊大失敗: 造成未知不良後果&#10;&#10;        &#9;   5.其中一方生命值歸零時戰鬥結束&#10;" wrappingWidth="1253.176254272461">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Button fx:id="back" alignment="CENTER" layoutX="680.0" layoutY="710.0" mnemonicParsing="false" onAction="#OnBackPressed" prefHeight="67.0" prefWidth="131.0" text="返回" textAlignment="CENTER">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
